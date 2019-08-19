@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+</head>
+<style>
+    body {
+        background: url('img/bg0_30.png');
+        display: flex;
+        justify-content: center;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    
+    #game {
+        cursor: none;
+    }
+    
+    .alert {
+        width: 600px;
+        height: 600px;
+        border: #FF7D4B solid 6px;
+        border-radius: 30px;
+        background: #FAFAD7;
+        color: #FF7D4B;
+        text-align: center;
+    }
+    
+    .btn_st {
+        width: 260px;
+        height: 70px;
+        background: #FF7D4B;
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 30px;
+    }
+</style>
+
+<body>
+    <div id="game">
+        <img src="img/bamboo.png" alt="">
+
+    </div>
+    <div class="alert">
+        <div style="font-size: 35px">遊戲規則</div>
+        <ol style="font-size: 18px">
+            <li>滑鼠滑動左右兩邊可橫向移動筷子</li>
+            <li>點下左鍵即可夾取(撈起)珍珠</li>
+            <li>成功夾取(撈起)一顆珍珠即獲得10分 </li>
+            <li>限時90秒，在30、60秒會加速水流</li>
+            <li>若不小心夾到過期珍珠，會倒扣分數</li>
+        </ol>
+        <div style="color:#960000;font-size:22px">自己的珍奶自己做 想喝多少珍珠就撈多少吧!!</div>
+        <button class="btn_st">開始</button>
+    </div>
+    <script src="js/lib/phaser.min.js"></script>
+    <script src="js/const.js"></script>
+    <script src="js/game-start.js"></script>
+    <script src="js/game-play.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
